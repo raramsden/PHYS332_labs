@@ -88,7 +88,7 @@ module Lab6Test(
     );
     
     wire A0, A1, A2, A3, B0, B1, B2, B3;
-    wire S0, S1, S2, S3, C1, C2, C3, cout;
+    wire S0, S1, S2, S3, C1, C2, C3, C4;
 
 // A0-A3, B0-B3 GLOBAL inputs
     assign A0 = SW[0];
@@ -114,7 +114,7 @@ module Lab6Test(
     FullAdder first  (A0, B0, 0,  C1, S0);
     FullAdder second (A1, B1, C1, C2, S1);
     FullAdder third  (A2, B2, C2, C3, S2);
-    FullAdder fourth (A3, B3, C3, cout, S3);
+    FullAdder fourth (A3, B3, C3, C4, S3);
     Display   create (S0, S1, S2, S3, DA, DB, DC, DD, DE, DF, DG);
     
     assign CA = ~DA;
