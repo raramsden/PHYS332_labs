@@ -17,7 +17,7 @@ module LED_counters(
 endmodule
 
 
-//LED1
+//LED1 1ms on, 2ms off
 module LED_1mson_2msoff(
     input clock,
     output [0:0] LED
@@ -37,7 +37,7 @@ module LED_1mson_2msoff(
 endmodule
 
 
-//LED2
+//LED2 2 sec. on, 1 sec, off
 module LED_2son_1soff(
     input clock,
     output [0:0] LED
